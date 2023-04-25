@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h2>GlobeTrotter</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Tours</a>
+            <a href="#">Destination</a>
+            <a href="#">Deals</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </nav>
+        <div>
+            <a href="">Login</a>
+            <button>Sign up</button>
+        </div>
+    </header>
+
+    <!--Fin del header y comienzo de la primera seccion-->
+
+    <section class="section1">
+        <div class="contenido-principal">
+            <div class="texto1">
+                <h1>Explore the world, <br> one journey at a time</h1>
+                <p>Discover new destinations, plan your perfect trip, and book with <br> ease on GlobeTrotter</p>
+            </div>
+            <!-- cuadros grises de secciones-->
+            <div class="busqueda">
+                <button class="seleccion">One way</button>
+                <button class="seleccion medio">Round Trip</button>
+                <button class="seleccion">Multi-city</button>
+                <!--Formulario para ingresar informacion de viajes-->
+                <form class="formulario1" action="">
+                    <div>
+                        <label for="">From</label>
+                        <select name="" id="">
+                            <option value="">Nigeria</option>
+                            <option value="">Japan</option>
+                            <option value="">Brazil</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">To</label>
+                        <select name="" id="">
+                            <option value="">Finland</option>
+                            <option value="">Russia</option>
+                            <option value="">United States</option>
+                        </select>
+                    </div>
+                    <!--Fecha y boton de busqueda-->
+                    <div>
+                        <label for="">Expected Date</label>
+                        <input type="date">
+                    </div>
+                    <div class="form3">
+                        <button >Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Inicio de la segunda seccion-->
+    <section class="destination">
+        <div class="conector">
+            <div class="detext">
+                <h2>Explore Top Destinations</h2>
+                <p>Check out some incredible destinations.</p>
+           </div>
+           <div class="destination-botones">
+                <button> < </button>
+                <button> > </button>
+           </div>
+        </div>
+
+        <!---INICIO CARRUSEL--> <!---INICIO CARRUSEL--> <!---INICIO CARRUSEL--> <!---INICIO CARRUSEL--> <!---INICIO CARRUSEL-->
+    <div class="carrusel">
+        <!-- inicia una caja de destinos--> 
+        <div class="caja-destino">
+            <div class="caja-imagen">
+                <div class="puntuacion">
+                    <p><img class="estrella" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO2ZvW8bdRzGf1Q09r357MT3YikTZSgIwdAWCZA6MYBQ/oIKykCHDlUZujcUlQ2pVMAYJFQQUgckhKCxHb/cxU7sOunZvoiKdkCZUFGGVlS0gd/vQXcXv9upae4SG/mRnsny3ef5+vHd92xCJppoosAEW3sVdf0EGUfB0lTY2kPXlqaScRPq2jxsHag71ubJOAm/Ph+Crf+OuubAAzX1HoqzHBkXwU6cacHvuKp+QMZBAHkGNXWjCV5THXjAUm87r5FRF6r6221Tb8ADluL4LTLqQk1L9YW/pQDr8UUyyoKlvQRLZX3hvQDAuvIKGVXBUr/qqkwXfByozCyQkb1xWcpfPVNvh19zAkw/QiWeIKMmWMrH/SvTBr8243wCji+RURKKsxys+B994RvgLXjg5vQWLE04uOu8reioxY/B0uZgKWdhKdcGVqYd3IP3XJ6+hlLsLMrROazKx1BSdF/uE6grR7Chn4SdOIW6fgE1/Qpq6nVUtQKq6iaq6vbuV5kB8A1wDx4ox4CSZ7YadU1Xotu0KG/SFblAi5HrtBi5goJ0AcuRUyiIJ2HKz+0Ov5H4yF3AWktY9zrQfWMatjKd4H3g2UrDMlhxx4WI5+WGJcAQLw4OYOunUddZE757Heg39eEr0wHeCy+3wHvgJTBTAjUkBlN67wkV0t9FXdvumXoAlWH94Bvg3fCm9A8M8cxw34Oa+iaq2oNRqAxzJy8+RF56Zyj4Zoh1/QSqyr2DrAzz4LdgiG/8J/hWnZQjsOJ3DqIyzIHPi78hKx59KvhmCOf6vB6/5U9l5KEqwzx4G1ludk/wzRC2ImItntyPyjAXXsghFZN9ge94zq3MfBdkZZghOvDfo0i44NaIysynQVSGOfCG+DlADgUC3xGkHLvqZ2WYO3nxauDgzQCl2Cd+VYbtmOaFy/sXoBxb8qMyzHHeM83x6f2BBzmEUvT+XivTghfAcgJoln+Ai/vR/9XpF/dcmXwnPHOc5YGc+ELwAVbk9/2oTBM858G7ATL86cAD0FX5Sz8q44ELTXiW4UGXwl8EH6AYrfhVGbYD7pkDTYdvBgqPLAnTovx44NQ7dhlhC4ZwDlnhHM0JW/0qwxrwS5xrusQ9ds4RXICC9PoT19+8RGle/BoFofmnBkw5RrP8ZzQj/N0JzzXhWdpxGEiFXwsuQFH+cNf11xAzMISXB74/Kx6lGe6nXviw51QYSE6dDywAXZa+7QtuSpsw+d2fVduDpLk5mubudsM7pouhb4ILUJDudj6nin/SvDT/NL1FhRxGeuo8TYfve/AhsGQINDl1JxB4t8dmhDnw1JAoNcUF5Pk9/8aJn/kETU0t0GSIugFuhBh+JDF/qNtPtKgJ1BBvU1PKYTly3PfjJ589Tm9M5eji4V/wA+H9Pv5EE/1f9S9M4cKBWKiMUAAAAABJRU5ErkJggg==">4.5</p>
+                </div>
+            </div>
+            <div class="caja-info">
+                <h3>The Vatican City</h3>
+                <p><img class="foto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2klEQVR4nN1VMUtcQRB+pfd27i7GCBEFi2gfSJUiTSK2kjKinR4W/gTjE998884jgn3gIG0QLJRASKOFVuIvULuk0RBtkoicJ7O3exyXM7l3Z0AcmGZ33/d988283SC49/GOokcwWALxPgyf2STeF+JIstLXFXhC/FoBhVBtlbqXEE90DC6EigUz2ILBq2JvMa+ZmHhMCJ8cUSU1CQj9YnBuVRIW/nJu0Qn4kcou9dxZsOnXonz0ICEuaGoVft1XomQpKuAD/Sgx8UsPLgbHDd4feRJnV1Ub3zaBt2elbyVbU8lzzQ3WSnRPiXzDU1jEp/qRKrcqiQstCGZsdbnoYY0AJ2kI9pxFY94itaVOYHDoLZJQxt3abvsWEb91qt77NQUEYVazsckwXP7XtP1JkJMREF+B+DdnePCmc8VMcUgIF3o2zsVP2iawJIY3nLLVG88Qr7lK14O0kYTJM1fFz1bqlrPLo0L4pX8yh/w0NUFNIT64Gf/cvAfCFzee5aDT4JAH7DVgpyR+Uwc3mPJXRCksPQ66CQll2oPFPfGwbazBd+f9ZFfgDYrXayS8DYMd1/yPwW0+OkL4Vr+LiL92/dg0h2Tluc68EC5BeHGr4IEnMTyv+V/A72xcA+s+IworPjDAAAAAAElFTkSuQmCC">Rome, Italy</p>
+            </div>
+               
+            <div class="precio">
+                <p><strong>$350/</strong><span>person</span></p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <!-- cierra la caja de destinos-->
+                <!-- inicia una caja de destinos-->
+                <div class="caja-destino cajadest2">
+                    <div class="caja-imagen caja-imagen2">
+                        <div class="puntuacion">
+                            <p><img class="estrella" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO2ZvW8bdRzGf1Q09r357MT3YikTZSgIwdAWCZA6MYBQ/oIKykCHDlUZujcUlQ2pVMAYJFQQUgckhKCxHb/cxU7sOunZvoiKdkCZUFGGVlS0gd/vQXcXv9upae4SG/mRnsny3ef5+vHd92xCJppoosAEW3sVdf0EGUfB0lTY2kPXlqaScRPq2jxsHag71ubJOAm/Ph+Crf+OuubAAzX1HoqzHBkXwU6cacHvuKp+QMZBAHkGNXWjCV5THXjAUm87r5FRF6r6221Tb8ADluL4LTLqQk1L9YW/pQDr8UUyyoKlvQRLZX3hvQDAuvIKGVXBUr/qqkwXfByozCyQkb1xWcpfPVNvh19zAkw/QiWeIKMmWMrH/SvTBr8243wCji+RURKKsxys+B994RvgLXjg5vQWLE04uOu8reioxY/B0uZgKWdhKdcGVqYd3IP3XJ6+hlLsLMrROazKx1BSdF/uE6grR7Chn4SdOIW6fgE1/Qpq6nVUtQKq6iaq6vbuV5kB8A1wDx4ox4CSZ7YadU1Xotu0KG/SFblAi5HrtBi5goJ0AcuRUyiIJ2HKz+0Ov5H4yF3AWktY9zrQfWMatjKd4H3g2UrDMlhxx4WI5+WGJcAQLw4OYOunUddZE757Heg39eEr0wHeCy+3wHvgJTBTAjUkBlN67wkV0t9FXdvumXoAlWH94Bvg3fCm9A8M8cxw34Oa+iaq2oNRqAxzJy8+RF56Zyj4Zoh1/QSqyr2DrAzz4LdgiG/8J/hWnZQjsOJ3DqIyzIHPi78hKx59KvhmCOf6vB6/5U9l5KEqwzx4G1ludk/wzRC2ImItntyPyjAXXsghFZN9ge94zq3MfBdkZZghOvDfo0i44NaIysynQVSGOfCG+DlADgUC3xGkHLvqZ2WYO3nxauDgzQCl2Cd+VYbtmOaFy/sXoBxb8qMyzHHeM83x6f2BBzmEUvT+XivTghfAcgJoln+Ai/vR/9XpF/dcmXwnPHOc5YGc+ELwAVbk9/2oTBM858G7ATL86cAD0FX5Sz8q44ELTXiW4UGXwl8EH6AYrfhVGbYD7pkDTYdvBgqPLAnTovx44NQ7dhlhC4ZwDlnhHM0JW/0qwxrwS5xrusQ9ds4RXICC9PoT19+8RGle/BoFofmnBkw5RrP8ZzQj/N0JzzXhWdpxGEiFXwsuQFH+cNf11xAzMISXB74/Kx6lGe6nXviw51QYSE6dDywAXZa+7QtuSpsw+d2fVduDpLk5mubudsM7pouhb4ILUJDudj6nin/SvDT/NL1FhRxGeuo8TYfve/AhsGQINDl1JxB4t8dmhDnw1JAoNcUF5Pk9/8aJn/kETU0t0GSIugFuhBh+JDF/qNtPtKgJ1BBvU1PKYTly3PfjJ589Tm9M5eji4V/wA+H9Pv5EE/1f9S9M4cKBWKiMUAAAAABJRU5ErkJggg==">4.5</p>
+                        </div>
+                    </div>
+                    <div class="caja-info">
+                        <h3>Buckingham Palace</h3>
+                        <p><img class="foto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2klEQVR4nN1VMUtcQRB+pfd27i7GCBEFi2gfSJUiTSK2kjKinR4W/gTjE998884jgn3gIG0QLJRASKOFVuIvULuk0RBtkoicJ7O3exyXM7l3Z0AcmGZ33/d988283SC49/GOokcwWALxPgyf2STeF+JIstLXFXhC/FoBhVBtlbqXEE90DC6EigUz2ILBq2JvMa+ZmHhMCJ8cUSU1CQj9YnBuVRIW/nJu0Qn4kcou9dxZsOnXonz0ICEuaGoVft1XomQpKuAD/Sgx8UsPLgbHDd4feRJnV1Ub3zaBt2elbyVbU8lzzQ3WSnRPiXzDU1jEp/qRKrcqiQstCGZsdbnoYY0AJ2kI9pxFY94itaVOYHDoLZJQxt3abvsWEb91qt77NQUEYVazsckwXP7XtP1JkJMREF+B+DdnePCmc8VMcUgIF3o2zsVP2iawJIY3nLLVG88Qr7lK14O0kYTJM1fFz1bqlrPLo0L4pX8yh/w0NUFNIT64Gf/cvAfCFzee5aDT4JAH7DVgpyR+Uwc3mPJXRCksPQ66CQll2oPFPfGwbazBd+f9ZFfgDYrXayS8DYMd1/yPwW0+OkL4Vr+LiL92/dg0h2Tluc68EC5BeHGr4IEnMTyv+V/A72xcA+s+IworPjDAAAAAAElFTkSuQmCC">London, England</p>
+                    </div>
+                       
+                    <div class="precio">
+                        <p><strong>$350/</strong><span>person</span></p>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                <!-- cierra la caja de destinos-->
+                        <!-- inicia una caja de destinos-->
+        <div class="caja-destino">
+            <div class="caja-imagen caja-imagen3">
+                <div class="puntuacion">
+                    <p><img class="estrella" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO2ZvW8bdRzGf1Q09r357MT3YikTZSgIwdAWCZA6MYBQ/oIKykCHDlUZujcUlQ2pVMAYJFQQUgckhKCxHb/cxU7sOunZvoiKdkCZUFGGVlS0gd/vQXcXv9upae4SG/mRnsny3ef5+vHd92xCJppoosAEW3sVdf0EGUfB0lTY2kPXlqaScRPq2jxsHag71ubJOAm/Ph+Crf+OuubAAzX1HoqzHBkXwU6cacHvuKp+QMZBAHkGNXWjCV5THXjAUm87r5FRF6r6221Tb8ADluL4LTLqQk1L9YW/pQDr8UUyyoKlvQRLZX3hvQDAuvIKGVXBUr/qqkwXfByozCyQkb1xWcpfPVNvh19zAkw/QiWeIKMmWMrH/SvTBr8243wCji+RURKKsxys+B994RvgLXjg5vQWLE04uOu8reioxY/B0uZgKWdhKdcGVqYd3IP3XJ6+hlLsLMrROazKx1BSdF/uE6grR7Chn4SdOIW6fgE1/Qpq6nVUtQKq6iaq6vbuV5kB8A1wDx4ox4CSZ7YadU1Xotu0KG/SFblAi5HrtBi5goJ0AcuRUyiIJ2HKz+0Ov5H4yF3AWktY9zrQfWMatjKd4H3g2UrDMlhxx4WI5+WGJcAQLw4OYOunUddZE757Heg39eEr0wHeCy+3wHvgJTBTAjUkBlN67wkV0t9FXdvumXoAlWH94Bvg3fCm9A8M8cxw34Oa+iaq2oNRqAxzJy8+RF56Zyj4Zoh1/QSqyr2DrAzz4LdgiG/8J/hWnZQjsOJ3DqIyzIHPi78hKx59KvhmCOf6vB6/5U9l5KEqwzx4G1ludk/wzRC2ImItntyPyjAXXsghFZN9ge94zq3MfBdkZZghOvDfo0i44NaIysynQVSGOfCG+DlADgUC3xGkHLvqZ2WYO3nxauDgzQCl2Cd+VYbtmOaFy/sXoBxb8qMyzHHeM83x6f2BBzmEUvT+XivTghfAcgJoln+Ai/vR/9XpF/dcmXwnPHOc5YGc+ELwAVbk9/2oTBM858G7ATL86cAD0FX5Sz8q44ELTXiW4UGXwl8EH6AYrfhVGbYD7pkDTYdvBgqPLAnTovx44NQ7dhlhC4ZwDlnhHM0JW/0qwxrwS5xrusQ9ds4RXICC9PoT19+8RGle/BoFofmnBkw5RrP8ZzQj/N0JzzXhWdpxGEiFXwsuQFH+cNf11xAzMISXB74/Kx6lGe6nXviw51QYSE6dDywAXZa+7QtuSpsw+d2fVduDpLk5mubudsM7pouhb4ILUJDudj6nin/SvDT/NL1FhRxGeuo8TYfve/AhsGQINDl1JxB4t8dmhDnw1JAoNcUF5Pk9/8aJn/kETU0t0GSIugFuhBh+JDF/qNtPtKgJ1BBvU1PKYTly3PfjJ589Tm9M5eji4V/wA+H9Pv5EE/1f9S9M4cKBWKiMUAAAAABJRU5ErkJggg==">4.5</p>
+                </div>
+            </div>
+            <div class="caja-info">
+                <h3>The Vatican City</h3>
+                <p><img class="foto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2klEQVR4nN1VMUtcQRB+pfd27i7GCBEFi2gfSJUiTSK2kjKinR4W/gTjE998884jgn3gIG0QLJRASKOFVuIvULuk0RBtkoicJ7O3exyXM7l3Z0AcmGZ33/d988283SC49/GOokcwWALxPgyf2STeF+JIstLXFXhC/FoBhVBtlbqXEE90DC6EigUz2ILBq2JvMa+ZmHhMCJ8cUSU1CQj9YnBuVRIW/nJu0Qn4kcou9dxZsOnXonz0ICEuaGoVft1XomQpKuAD/Sgx8UsPLgbHDd4feRJnV1Ub3zaBt2elbyVbU8lzzQ3WSnRPiXzDU1jEp/qRKrcqiQstCGZsdbnoYY0AJ2kI9pxFY94itaVOYHDoLZJQxt3abvsWEb91qt77NQUEYVazsckwXP7XtP1JkJMREF+B+DdnePCmc8VMcUgIF3o2zsVP2iawJIY3nLLVG88Qr7lK14O0kYTJM1fFz1bqlrPLo0L4pX8yh/w0NUFNIT64Gf/cvAfCFzee5aDT4JAH7DVgpyR+Uwc3mPJXRCksPQ66CQll2oPFPfGwbazBd+f9ZFfgDYrXayS8DYMd1/yPwW0+OkL4Vr+LiL92/dg0h2Tluc68EC5BeHGr4IEnMTyv+V/A72xcA+s+IworPjDAAAAAAElFTkSuQmCC">Rome, Italy</p>
+            </div>
+               
+            <div class="precio">
+                <p><strong>$350/</strong><span>person</span></p>
+                <button>Book Now</button>
+            </div>
+            
+        </div>
+
+        <!---CARRUSEL OCULTO--> <!---CARRUSEL OCULTO--> <!---CARRUSEL OCULTO--> <!---CARRUSEL OCULTO--> <!---CARRUSEL OCULTO-->
+    <div class="cajas-ocultas">
+                    <!-- inicia una caja de destinos-->
+        <div class="caja-destino">
+            <div class="caja-imagen caja-imagen3">
+                <div class="puntuacion">
+                    <p><img class="estrella" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO2ZvW8bdRzGf1Q09r357MT3YikTZSgIwdAWCZA6MYBQ/oIKykCHDlUZujcUlQ2pVMAYJFQQUgckhKCxHb/cxU7sOunZvoiKdkCZUFGGVlS0gd/vQXcXv9upae4SG/mRnsny3ef5+vHd92xCJppoosAEW3sVdf0EGUfB0lTY2kPXlqaScRPq2jxsHag71ubJOAm/Ph+Crf+OuubAAzX1HoqzHBkXwU6cacHvuKp+QMZBAHkGNXWjCV5THXjAUm87r5FRF6r6221Tb8ADluL4LTLqQk1L9YW/pQDr8UUyyoKlvQRLZX3hvQDAuvIKGVXBUr/qqkwXfByozCyQkb1xWcpfPVNvh19zAkw/QiWeIKMmWMrH/SvTBr8243wCji+RURKKsxys+B994RvgLXjg5vQWLE04uOu8reioxY/B0uZgKWdhKdcGVqYd3IP3XJ6+hlLsLMrROazKx1BSdF/uE6grR7Chn4SdOIW6fgE1/Qpq6nVUtQKq6iaq6vbuV5kB8A1wDx4ox4CSZ7YadU1Xotu0KG/SFblAi5HrtBi5goJ0AcuRUyiIJ2HKz+0Ov5H4yF3AWktY9zrQfWMatjKd4H3g2UrDMlhxx4WI5+WGJcAQLw4OYOunUddZE757Heg39eEr0wHeCy+3wHvgJTBTAjUkBlN67wkV0t9FXdvumXoAlWH94Bvg3fCm9A8M8cxw34Oa+iaq2oNRqAxzJy8+RF56Zyj4Zoh1/QSqyr2DrAzz4LdgiG/8J/hWnZQjsOJ3DqIyzIHPi78hKx59KvhmCOf6vB6/5U9l5KEqwzx4G1ludk/wzRC2ImItntyPyjAXXsghFZN9ge94zq3MfBdkZZghOvDfo0i44NaIysynQVSGOfCG+DlADgUC3xGkHLvqZ2WYO3nxauDgzQCl2Cd+VYbtmOaFy/sXoBxb8qMyzHHeM83x6f2BBzmEUvT+XivTghfAcgJoln+Ai/vR/9XpF/dcmXwnPHOc5YGc+ELwAVbk9/2oTBM858G7ATL86cAD0FX5Sz8q44ELTXiW4UGXwl8EH6AYrfhVGbYD7pkDTYdvBgqPLAnTovx44NQ7dhlhC4ZwDlnhHM0JW/0qwxrwS5xrusQ9ds4RXICC9PoT19+8RGle/BoFofmnBkw5RrP8ZzQj/N0JzzXhWdpxGEiFXwsuQFH+cNf11xAzMISXB74/Kx6lGe6nXviw51QYSE6dDywAXZa+7QtuSpsw+d2fVduDpLk5mubudsM7pouhb4ILUJDudj6nin/SvDT/NL1FhRxGeuo8TYfve/AhsGQINDl1JxB4t8dmhDnw1JAoNcUF5Pk9/8aJn/kETU0t0GSIugFuhBh+JDF/qNtPtKgJ1BBvU1PKYTly3PfjJ589Tm9M5eji4V/wA+H9Pv5EE/1f9S9M4cKBWKiMUAAAAABJRU5ErkJggg==">4.5</p>
+                </div>
+            </div>
+            <div class="caja-info">
+                <h3>United Arab Emirates</h3>
+                <p><img class="foto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2klEQVR4nN1VMUtcQRB+pfd27i7GCBEFi2gfSJUiTSK2kjKinR4W/gTjE998884jgn3gIG0QLJRASKOFVuIvULuk0RBtkoicJ7O3exyXM7l3Z0AcmGZ33/d988283SC49/GOokcwWALxPgyf2STeF+JIstLXFXhC/FoBhVBtlbqXEE90DC6EigUz2ILBq2JvMa+ZmHhMCJ8cUSU1CQj9YnBuVRIW/nJu0Qn4kcou9dxZsOnXonz0ICEuaGoVft1XomQpKuAD/Sgx8UsPLgbHDd4feRJnV1Ub3zaBt2elbyVbU8lzzQ3WSnRPiXzDU1jEp/qRKrcqiQstCGZsdbnoYY0AJ2kI9pxFY94itaVOYHDoLZJQxt3abvsWEb91qt77NQUEYVazsckwXP7XtP1JkJMREF+B+DdnePCmc8VMcUgIF3o2zsVP2iawJIY3nLLVG88Qr7lK14O0kYTJM1fFz1bqlrPLo0L4pX8yh/w0NUFNIT64Gf/cvAfCFzee5aDT4JAH7DVgpyR+Uwc3mPJXRCksPQ66CQll2oPFPfGwbazBd+f9ZFfgDYrXayS8DYMd1/yPwW0+OkL4Vr+LiL92/dg0h2Tluc68EC5BeHGr4IEnMTyv+V/A72xcA+s+IworPjDAAAAAAElFTkSuQmCC">Dubai</p>
+            </div>
+               
+            <div class="precio">
+                <p><strong>$350/</strong><span>person</span></p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <!-- cierra la caja de destinos-->
+        </div>
+    </div>
+    <div class="caja-oculta2">
+        <!-- inicia una caja de destinos-->
+<div class="caja-destino">
+<div class="caja-imagen caja-imagen4">
+    <div class="puntuacion">
+        <p><img class="estrella" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO2ZvW8bdRzGf1Q09r357MT3YikTZSgIwdAWCZA6MYBQ/oIKykCHDlUZujcUlQ2pVMAYJFQQUgckhKCxHb/cxU7sOunZvoiKdkCZUFGGVlS0gd/vQXcXv9upae4SG/mRnsny3ef5+vHd92xCJppoosAEW3sVdf0EGUfB0lTY2kPXlqaScRPq2jxsHag71ubJOAm/Ph+Crf+OuubAAzX1HoqzHBkXwU6cacHvuKp+QMZBAHkGNXWjCV5THXjAUm87r5FRF6r6221Tb8ADluL4LTLqQk1L9YW/pQDr8UUyyoKlvQRLZX3hvQDAuvIKGVXBUr/qqkwXfByozCyQkb1xWcpfPVNvh19zAkw/QiWeIKMmWMrH/SvTBr8243wCji+RURKKsxys+B994RvgLXjg5vQWLE04uOu8reioxY/B0uZgKWdhKdcGVqYd3IP3XJ6+hlLsLMrROazKx1BSdF/uE6grR7Chn4SdOIW6fgE1/Qpq6nVUtQKq6iaq6vbuV5kB8A1wDx4ox4CSZ7YadU1Xotu0KG/SFblAi5HrtBi5goJ0AcuRUyiIJ2HKz+0Ov5H4yF3AWktY9zrQfWMatjKd4H3g2UrDMlhxx4WI5+WGJcAQLw4OYOunUddZE757Heg39eEr0wHeCy+3wHvgJTBTAjUkBlN67wkV0t9FXdvumXoAlWH94Bvg3fCm9A8M8cxw34Oa+iaq2oNRqAxzJy8+RF56Zyj4Zoh1/QSqyr2DrAzz4LdgiG/8J/hWnZQjsOJ3DqIyzIHPi78hKx59KvhmCOf6vB6/5U9l5KEqwzx4G1ludk/wzRC2ImItntyPyjAXXsghFZN9ge94zq3MfBdkZZghOvDfo0i44NaIysynQVSGOfCG+DlADgUC3xGkHLvqZ2WYO3nxauDgzQCl2Cd+VYbtmOaFy/sXoBxb8qMyzHHeM83x6f2BBzmEUvT+XivTghfAcgJoln+Ai/vR/9XpF/dcmXwnPHOc5YGc+ELwAVbk9/2oTBM858G7ATL86cAD0FX5Sz8q44ELTXiW4UGXwl8EH6AYrfhVGbYD7pkDTYdvBgqPLAnTovx44NQ7dhlhC4ZwDlnhHM0JW/0qwxrwS5xrusQ9ds4RXICC9PoT19+8RGle/BoFofmnBkw5RrP8ZzQj/N0JzzXhWdpxGEiFXwsuQFH+cNf11xAzMISXB74/Kx6lGe6nXviw51QYSE6dDywAXZa+7QtuSpsw+d2fVduDpLk5mubudsM7pouhb4ILUJDudj6nin/SvDT/NL1FhRxGeuo8TYfve/AhsGQINDl1JxB4t8dmhDnw1JAoNcUF5Pk9/8aJn/kETU0t0GSIugFuhBh+JDF/qNtPtKgJ1BBvU1PKYTly3PfjJ589Tm9M5eji4V/wA+H9Pv5EE/1f9S9M4cKBWKiMUAAAAABJRU5ErkJggg==">4.5</p>
+    </div>
+</div>
+<div class="caja-info">
+    <h3>Greece</h3>
+    <p><img class="foto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2klEQVR4nN1VMUtcQRB+pfd27i7GCBEFi2gfSJUiTSK2kjKinR4W/gTjE998884jgn3gIG0QLJRASKOFVuIvULuk0RBtkoicJ7O3exyXM7l3Z0AcmGZ33/d988283SC49/GOokcwWALxPgyf2STeF+JIstLXFXhC/FoBhVBtlbqXEE90DC6EigUz2ILBq2JvMa+ZmHhMCJ8cUSU1CQj9YnBuVRIW/nJu0Qn4kcou9dxZsOnXonz0ICEuaGoVft1XomQpKuAD/Sgx8UsPLgbHDd4feRJnV1Ub3zaBt2elbyVbU8lzzQ3WSnRPiXzDU1jEp/qRKrcqiQstCGZsdbnoYY0AJ2kI9pxFY94itaVOYHDoLZJQxt3abvsWEb91qt77NQUEYVazsckwXP7XtP1JkJMREF+B+DdnePCmc8VMcUgIF3o2zsVP2iawJIY3nLLVG88Qr7lK14O0kYTJM1fFz1bqlrPLo0L4pX8yh/w0NUFNIT64Gf/cvAfCFzee5aDT4JAH7DVgpyR+Uwc3mPJXRCksPQ66CQll2oPFPfGwbazBd+f9ZFfgDYrXayS8DYMd1/yPwW0+OkL4Vr+LiL92/dg0h2Tluc68EC5BeHGr4IEnMTyv+V/A72xcA+s+IworPjDAAAAAAElFTkSuQmCC">Creta, Greece</p>
+</div>
+   
+<div class="precio">
+    <p><strong>$350/</strong><span>person</span></p>
+    <button>Book Now</button>
+</div>
+</div>
+<!-- cierra la caja de destinos-->
+</div>
+<div class="caja-oculta3">
+    <!-- inicia una caja de destinos-->
+<div class="caja-destino">
+<div class="caja-imagen">
+<div class="puntuacion">
+    <p><img class="estrella" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO2ZvW8bdRzGf1Q09r357MT3YikTZSgIwdAWCZA6MYBQ/oIKykCHDlUZujcUlQ2pVMAYJFQQUgckhKCxHb/cxU7sOunZvoiKdkCZUFGGVlS0gd/vQXcXv9upae4SG/mRnsny3ef5+vHd92xCJppoosAEW3sVdf0EGUfB0lTY2kPXlqaScRPq2jxsHag71ubJOAm/Ph+Crf+OuubAAzX1HoqzHBkXwU6cacHvuKp+QMZBAHkGNXWjCV5THXjAUm87r5FRF6r6221Tb8ADluL4LTLqQk1L9YW/pQDr8UUyyoKlvQRLZX3hvQDAuvIKGVXBUr/qqkwXfByozCyQkb1xWcpfPVNvh19zAkw/QiWeIKMmWMrH/SvTBr8243wCji+RURKKsxys+B994RvgLXjg5vQWLE04uOu8reioxY/B0uZgKWdhKdcGVqYd3IP3XJ6+hlLsLMrROazKx1BSdF/uE6grR7Chn4SdOIW6fgE1/Qpq6nVUtQKq6iaq6vbuV5kB8A1wDx4ox4CSZ7YadU1Xotu0KG/SFblAi5HrtBi5goJ0AcuRUyiIJ2HKz+0Ov5H4yF3AWktY9zrQfWMatjKd4H3g2UrDMlhxx4WI5+WGJcAQLw4OYOunUddZE757Heg39eEr0wHeCy+3wHvgJTBTAjUkBlN67wkV0t9FXdvumXoAlWH94Bvg3fCm9A8M8cxw34Oa+iaq2oNRqAxzJy8+RF56Zyj4Zoh1/QSqyr2DrAzz4LdgiG/8J/hWnZQjsOJ3DqIyzIHPi78hKx59KvhmCOf6vB6/5U9l5KEqwzx4G1ludk/wzRC2ImItntyPyjAXXsghFZN9ge94zq3MfBdkZZghOvDfo0i44NaIysynQVSGOfCG+DlADgUC3xGkHLvqZ2WYO3nxauDgzQCl2Cd+VYbtmOaFy/sXoBxb8qMyzHHeM83x6f2BBzmEUvT+XivTghfAcgJoln+Ai/vR/9XpF/dcmXwnPHOc5YGc+ELwAVbk9/2oTBM858G7ATL86cAD0FX5Sz8q44ELTXiW4UGXwl8EH6AYrfhVGbYD7pkDTYdvBgqPLAnTovx44NQ7dhlhC4ZwDlnhHM0JW/0qwxrwS5xrusQ9ds4RXICC9PoT19+8RGle/BoFofmnBkw5RrP8ZzQj/N0JzzXhWdpxGEiFXwsuQFH+cNf11xAzMISXB74/Kx6lGe6nXviw51QYSE6dDywAXZa+7QtuSpsw+d2fVduDpLk5mubudsM7pouhb4ILUJDudj6nin/SvDT/NL1FhRxGeuo8TYfve/AhsGQINDl1JxB4t8dmhDnw1JAoNcUF5Pk9/8aJn/kETU0t0GSIugFuhBh+JDF/qNtPtKgJ1BBvU1PKYTly3PfjJ589Tm9M5eji4V/wA+H9Pv5EE/1f9S9M4cKBWKiMUAAAAABJRU5ErkJggg==">4.5</p>
+</div>
+</div>
+<div class="caja-info">
+<h3>The Vatican City</h3>
+<p><img class="foto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB2klEQVR4nN1VMUtcQRB+pfd27i7GCBEFi2gfSJUiTSK2kjKinR4W/gTjE998884jgn3gIG0QLJRASKOFVuIvULuk0RBtkoicJ7O3exyXM7l3Z0AcmGZ33/d988283SC49/GOokcwWALxPgyf2STeF+JIstLXFXhC/FoBhVBtlbqXEE90DC6EigUz2ILBq2JvMa+ZmHhMCJ8cUSU1CQj9YnBuVRIW/nJu0Qn4kcou9dxZsOnXonz0ICEuaGoVft1XomQpKuAD/Sgx8UsPLgbHDd4feRJnV1Ub3zaBt2elbyVbU8lzzQ3WSnRPiXzDU1jEp/qRKrcqiQstCGZsdbnoYY0AJ2kI9pxFY94itaVOYHDoLZJQxt3abvsWEb91qt77NQUEYVazsckwXP7XtP1JkJMREF+B+DdnePCmc8VMcUgIF3o2zsVP2iawJIY3nLLVG88Qr7lK14O0kYTJM1fFz1bqlrPLo0L4pX8yh/w0NUFNIT64Gf/cvAfCFzee5aDT4JAH7DVgpyR+Uwc3mPJXRCksPQ66CQll2oPFPfGwbazBd+f9ZFfgDYrXayS8DYMd1/yPwW0+OkL4Vr+LiL92/dg0h2Tluc68EC5BeHGr4IEnMTyv+V/A72xcA+s+IworPjDAAAAAAElFTkSuQmCC">Rome, Italy</p>
+</div>
+
+<div class="precio">
+<p><strong>$350/</strong><span>person</span></p>
+<button>Book Now</button>
+</div>
+</div>
+<!-- cierra la caja de destinos-->
+</div>
+</div>
+    
+        <!---TERMINA CARRUSEL--> <!---TERMINA CARRUSEL--> <!---TERMINA CARRUSEL--> <!---TERMINA CARRUSEL--> <!---TERMINA CARRUSEL-->
+        <div class="carrusel-botones">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </section>
+
+    <!--SECCION 3 WHAT WE OFFER-->
+    <section class="section3">
+        <div class="sec3inicio">
+            <p>What we offer</p>
+            <h2>Check Out A Few Advantages Of Joining Us</h2>
+        </div>
+        <div class="offer">
+            <div class="text-offer">
+                <button class="boton1">01</button>
+                <h3>Best deals and Discount</h3>
+                <p>We are committed to finding the best deals and discounts <br>
+                for our customers. We work with top travel providers to <br>
+                offer you exclusive discounts, so you can stretch your <br>
+                budget further and make the most of your vacation.</p>
+
+                <button class="boton2">02</button>
+                <h3>Reliable and Safe Travel</h3>
+                <p>We understand that safety is a top concern when traveling. <br>
+                Thats why we work with only the most reliable travel <br>
+                providers and tour operators, so you can travel with peace <br>
+                of mind knowing that your trip is in good hands.</p>
+
+                <button class="boton3">03</button>
+                <h3>Hassle-Free Booking</h3>
+                <p> Booking your trip with us is simple and straightforward. We <br>
+                take care of all the details, from fight and hotel <br>
+                reservations to activities and transportation, so you can <br>
+                focus on what really matters - enjoying your vacation.</p>
+
+                <div class="start">
+                    <button class="started">Get Started</button>
+                </div>
+            </div>
+            <div class="imagen-offer">
+                <img class="imagen-principal" src="camara.jpg" alt="">
+                <img class="imagenes-secundarias secundaria1" src="imagenchica1.jpg" alt="">
+                <img class="imagenes-secundarias" src="imagenchica2.jpg" alt="">
+                <img class="imagenes-secundarias" src="imagenchica3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="section4-imagenes">
+            <img src="vacation.jpg" alt="">
+            <img src="vacation2.jpg" alt="">
+        </div>
+        <div class="section4-texto">
+            <h3>We'll make sure you have a <br> fantastic vacation.</h3>
+            <p>We know that every traveler is unique, which is why we offer a range <br></p>
+            of options to fit your specific needs. Whether you're looking for <br>
+            luxury or budget-friendly, we've got you covered. Our team of travel <br>
+            experts is always on hand to provide personalized recommendations <br>
+            and advice, so you can make the most of your trip.
+            <button>Learn More</button>
+            <div class="adicional">
+                <p><span>300+</span>Travelers <br> And Partners</p>
+                <p><span>500+</span>Places and <br> Destinations</p>
+                <p><span>10+</span>Years Of <br> Experience</p>
+            </div>
+        </div>
+    </section>
+    <section class="section5">
+        <div class="inicio5">
+            <h2>See Why Tourists Choose Us!</h2>
+            <div class="botones5">
+                <button> < </button>
+                <button> > </button>
+            </div>
+        </div>
+        <div class="contenido5">
+            <div class="imagen5">
+                <img class="img5-1" src="person1.jpg" alt="">
+                <img class="img5-2" src="person2.jpg" alt="">
+                <img class="img5-3" src="person3.jpg" alt="">
+                <img class="img5-4" src="person4.jpg" alt="">
+                <img class="img5-5" src="person5.jpg" alt="">
+            </div>
+            <div class="texto5">
+               <img class="comilla comillaizq" src="comillaizq.png" alt=""> 
+               <p>I had an amazing experience with this travel website! The <br>
+                site is easy to use, the prices are great, and the customer <br>
+            service is top-notch. I would definitely use it again for my <br>
+             next trip!</p>
+             <img class="comilla comillader" src="comillader.png" alt="">
+             <img class="comilla linea" src="linea.png" alt="">
+             <p class="nombre"><strong>Thomas Edison</strong> <br> Los Angeles, CA</p>
+            </div>
+        </div>
+    </section>
+    <section class="section6">
+        <h2>We have access to top places around <br> the world</h2>
+        <div class="caja6">
+            <p><strong>Subscribe to our Newsletter</strong></p>
+            <p class="texto6">Stay in the loop with everything you need to know.</p>
+            <form action="">
+                <input type="email" placeholder="Enter your Email">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <img class="mapa6" src="mapa.png" alt="">
+    </section>
+    <section class="section7">
+        <div>
+            <h3>Prepare yourself and lets explore the <br> beauty of the world</h3>
+            <p>We have lots of exclusive deals for you.</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <h2>GlobeTrotter</h2>
+            <p>Book your next adventure with us today <br>
+            and discover the world in a whole new <br>
+            way.</p>
+        </div>
+        <div class="secciones6">
+            <div>
+                <p><strong>Home</strong></p>
+                <p>Destinations</p>
+                <p>Tours</p>
+                <p>About Us</p>
+                <p>FAQs</p>
+                <p>Contact us</p>
+            </div>
+            <div>
+                <p><strong>About US</strong></p>
+                <p>About GlobeTrotter</p>
+                <p>Careers</p>
+                <p>How it works</p>
+                <p>Blog</p>
+            </div>
+            <div class="divsec3">
+                <p><strong>Partner with us</strong></p>
+                <p>Partnership</p>
+                <p>Affilate programs</p>
+                <p>Promotions and events</p>
+                <p>Community</p>
+            </div>
+            <div class="divsec4">
+                <p><strong>Support</strong></p>
+                <p>Help Center</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Terms of service</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ GlobeTrotter 2023. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
